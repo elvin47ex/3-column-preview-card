@@ -1,0 +1,101 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 15px;
+    background-color: hsl(0,0%,95%);
+}
+main {
+    max-width:850px;
+    width:90%;
+    height:500px;
+    margin:100px auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.banner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+}
+.banner1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.banner .car {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.car img {
+    width:64px;
+    height:40px;
+}
+.car  h2 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    color:white;
+    font-family: 'Big Shoulders',cursive;
+    margin:20px 0;
+}
+.car  p {
+    max-width: 100%;
+    font-size: 19px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu Condensed',sans-serif;
+}
+.car  a {
+    text-decoration: none;
+    background-color: white;
+    padding:12px 25px;
+    border-radius:20px / 50%;
+    font-weight: 600;
+    text-align:center;
+    width: fit-content;
+    transition: 0.3 ease;
+    border:2px solid white;
+    cursor: pointer;
+}
+.car .sedans {
+    color:hsl(31, 77%, 52%);
+}
+.car .suvs {
+    color:hsl(184, 100%, 22%);
+}
+ .car .luxury {
+    color:hsl(179, 100%, 13%);
+}
+.car  a:active {
+    color:  hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+}
+.banner2 {
+    background-color: hsl(184, 100%, 22%);
+
+}
+.banner3 {
+    background-color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width:375px) {
+   main {
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: auto;
+  }
+
+  .car {
+    align-items: flex-start;
+  }
+
+  .car a {
+    margin-top: 20px;
+  }
+}
